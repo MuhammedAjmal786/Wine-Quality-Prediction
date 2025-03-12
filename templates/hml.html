@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="log container">
+        <dev style="text-align: center">
+            <h1>Wine prediction</h1>
+            <form action="{{url_for('predict')}}"method='post'>
+
+                <input type="number" name="alcohol" placeholder="Alcohol Content">
+                <br><br>
+                <input type="number" name="malic_acid" placeholder="Malic Acid Content"required />
+                <br><br>
+                <input type="number" name="ash" placeholder="Ash Content">
+                <br><br>
+                <input type="number" name="alcalinity_of_ash" placeholder="Alcalinity of Ash Content"required />
+                <br><br>
+                <input type="number" name="magnesium" placeholder="Magnesium Content"required />
+                <br><br>
+                <input type="number" name="total_phenols" placeholder="Total Phenols Content"required />
+                <br><br>
+                <input type="number" name="flavanoids" placeholder="Flavanoids Content"required />
+                <br><br>
+                <input type="number" name="nonflavanoid_phenols" placeholder="Nonflavanoid Phenols Content"required />
+                <br><br>
+                <input type="number" name="proanthocyanins" placeholder="Proanthocyanins Content"required />
+                <br><br>
+                <input type="number" name="color_intensity" placeholder="Color Intensity"required />
+                <br><br>
+                <input type="number" name="hue" placeholder="Hue"required /><br><br>
+                <input type="number" name="od280/od315_of_diluted_wines" placeholder="od280/od315_of_diluted_wines"required />
+                <br><br>
+                <input type="number" name="proline" placeholder="Proline Content"required />
+                <br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <h2>{{prediction_text}}</h2>
+        </dev>
+    </dev>
+</body>
+</html>
