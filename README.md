@@ -17,7 +17,7 @@ And predict Wine Quality based on these inputs
 ```
 📦 Diabetes-Prediction
 ├── 📂 wine.ipynb                # Exploratory Data Analysis (EDA) scripts
-├── 📂 flsk.py      # Flask-based Diabetes Prediction app
+├── 📂 flsk.py      # Flask-based Wine Quality Prediction Prediction app
 ├── 📂 votingS.pkl      # Model saved using pickle
 templates/;
 ├── 📂 hml.html
